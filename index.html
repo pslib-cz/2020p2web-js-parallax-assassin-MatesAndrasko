@@ -34,7 +34,6 @@
     let l4 = document.getElementsByClassName("layer-4")[0];
     window.onscroll =()  =>{
         var n_scroll = window.scrollY;
-        console.log(man.style.transform)
         man.style.transform = "translate(-"+n_scroll*0.5+"px, -"+n_scroll*0.75+"px)";
         bg.style.transform = "translateY(-"+n_scroll*0.25+"px)";
         l1.style.transform = "translateY(-"+n_scroll*0.5+"px)";
