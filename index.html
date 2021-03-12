@@ -26,4 +26,22 @@
         <p>Creating parallax effect</p>
     </section>
 </body>
+<script>
+    let bg = document.getElementsByClassName("layer-background")[0];
+    let l1 = document.getElementsByClassName("layer-1")[0];
+    let l2 = document.getElementsByClassName("layer-2")[0];
+    let man = document.getElementsByClassName("layer-man")[0];
+    let l4 = document.getElementsByClassName("layer-4")[0];
+    window.onscroll =()  =>{
+        var n_scroll = window.scrollY;
+        console.log(man.style.transform)
+        man.style.transform = "translate(-"+n_scroll*0.5+"px, -"+n_scroll*0.75+"px)";
+        bg.style.transform = "translateY(-"+n_scroll*0.25+"px)";
+        l1.style.transform = "translateY(-"+n_scroll*0.5+"px)";
+        l2.style.transform = "translateY(-"+n_scroll*0.25+"px)";
+        l4.style.transform = "translateY(-"+n_scroll+"px)";
+
+
+    }
+</script>
 </html>
